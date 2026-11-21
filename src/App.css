@@ -1,0 +1,285 @@
+
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header_left {
+  font-size: 25px;
+  color: #3252df;
+  margin-left: 100px;
+}
+.header_left b {
+  color: #152c5b;
+  font-weight: 500;
+}
+.header_right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  font-size: 16px;
+  color: #152c5b;
+  margin-right: 100px;
+}
+.header_right .active {
+  color: #3252df;
+}
+.header_right button {
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 30px;
+  background-color: #3252df;
+  color: white;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0 8px 15px rgba(50, 82, 223, 0.3);
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+.text_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-left: 100px;
+}
+.text_box span {
+  color: #152c5b;
+  font-size: 40px;
+  font-weight: 600;
+  width: 470px;
+}
+.text_box p {
+  color: #b0b0b0;
+  width: 470px;
+  font-size: 16px;
+}
+.text_box button {
+  width: 160px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #3252df;
+  color: white;
+  border: none;
+  margin-top: 30px;
+  box-shadow: 0 8px 15px rgba(50, 82, 223, 0.3);
+}
+.stats {
+  display: flex;
+  column-gap: 50px;
+  margin-top: 60px;
+}
+.stat img {
+  width: 30px;
+}
+.stat p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  width: auto;
+}
+.stat b {
+  color: #152c5b;
+  font-weight: 500;
+}
+
+.logo {
+  flex: 1;
+  position: relative;
+  max-width: 560px;
+}
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 20px 0;
+}
+.logo img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 410px;
+  border-radius: 40px 0 0 0;
+  object-fit: cover;
+  display: block;
+  margin-top: 60px;
+}
+
+.search {
+  width: 80%;
+  margin: 100px auto 0;
+  padding: 30px 40px;
+  background: #e9f0fd;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search_item {
+  background: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.search_item img {
+  width: 20px;
+}
+.search button {
+  background: #3252df;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.section {
+  padding: 0 100px;
+  margin-top: 150px;
+}
+.section h2 {
+  color: #152c5b;
+  font-weight: 500;
+}
+
+
+.picked {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 215px 215px;
+  gap: 30px;
+}
+.picked_card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+}
+.picked_card.big {
+  grid-row: span 2;
+}
+.picked_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #3252df;
+  padding: 8px 30px;
+  border-radius: 0 0 0 12px;
+}
+.picked_text {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+}
+.picked_text h3 {
+  margin: 0;
+  font-weight: 400;
+}
+.picked_text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+.hotels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 100px;
+}
+.hotel_img {
+  position: relative;
+}
+.hotel_img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.popular {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #3252df;
+  color: white;
+  padding: 6px 25px;
+  border-radius: 0 12px 0 12px;
+}
+.hotel h3 {
+  margin: 15px 0 0;
+  font-weight: 400;
+  color: #152c5b;
+}
+.hotel p {
+  margin: 0;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+
+footer {
+  margin-top: 100px;
+  border-top: 1px solid #e0e0e0;
+}
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+.footer_logo {
+  margin-left: 0;
+}
+.footer_top p {
+  color: #b0b0b0;
+}
+.owner {
+  margin-right: 100px;
+}
+.owner h4 {
+  color: #152c5b;
+  font-weight: 500;
+}
+.owner button {
+  background: #3252df;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+.copy {
+  background: #3252df;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+}
